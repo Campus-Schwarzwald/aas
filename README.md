@@ -40,7 +40,7 @@ Du erstellst eine eigene Verwaltungsschale für:
 
 ### 1. Template importieren
 
-- Öffne [https://designer.aas-suite.com](https://designer.aas-suite.com)
+- Öffne [https://v1-designer.aas-suite.de/]
 - Klicke auf **„Open Project“**
 - Lade die Datei `ebike_template_void.aasx` hoch. Du findest darin bereits die übergeordnete AAS mit dem Namen **„ebike“**.
 
