@@ -1,6 +1,6 @@
 # 🚲 AAS-Workshop: Erstelle die Verwaltungsschalen für das e-Bike
 
-In diesem Workshop erstellst du als Study die Verwaltungsschalen (Asset Administration Shells, AAS) für die verschiedenen **Komponenten eines e-Bikes**. Du nutzt dafür das bereitgestellte Template und arbeitest im **AAS-Designer** unter [https://v1-designer.aas-suite.de/].
+In diesem Workshop erstellst du die Verwaltungsschalen (Asset Administration Shells, AAS) für die verschiedenen **Komponenten eines e-Bikes**. Du nutzt dafür das bereitgestellte Template und arbeitest im **AAS-Designer** unter [https://v1-designer.aas-suite.de/].
 
 ![ebike](https://github.com/user-attachments/assets/cbe31a72-746f-411f-8391-8c1cd6797cb4)
 
