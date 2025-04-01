@@ -2,7 +2,7 @@
 
 # 🛠 Anleitung zur Befüllung der Verwaltungsschalen für das e-Bike
 
-Diese Anleitung beschreibt, wie du als Study eine Asset Administration Shell (AAS) für ein e-Bike und dessen Komponenten erstellst und befüllst. Die Datenstruktur basiert auf der AASX-Datei `ebike_template_void.aasx`.
+Diese Anleitung beschreibt, wie du eine Asset Administration Shell (AAS) für ein e-Bike und dessen Komponenten erstellst und befüllst. Die Datenstruktur basiert auf der AASX-Datei `ebike_template_void.aasx`.
 
 ---
 
