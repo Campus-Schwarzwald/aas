@@ -84,11 +84,10 @@ Du erstellst eine eigene Verwaltungsschale für:
 
 ---
 
-## 💾 Speichern & Abgabe
+## 💾 Speichern & Betrachten
 
-- Klicke auf **Export** > **AASX**
-- Benenne deine Datei eindeutig (z. B. `battery_studentname.aasx`)
-- Abgabe erfolgt laut Ansage (Moodle, Mail, USB, etc.)
+- Speichere deine Verwaltungsschale entsprechend ab (Name_ebike)
+- Betrachte deine Verwaltungsschale
 
 ---
 
