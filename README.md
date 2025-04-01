@@ -1,3 +1,7 @@
+#Aufgaben Tobi:
+- Screenshots einfügen von AAS-Suite
+- Einmal komplett durchspielen lassen von Jannis Hald
+
 # 🚲 AAS-Workshop: Erstelle die Verwaltungsschalen für das e-Bike
 
 In diesem Workshop erstellst du die Verwaltungsschalen (Asset Administration Shells, AAS) für die verschiedenen **Komponenten eines e-Bikes**. Du nutzt dafür das bereitgestellte Template und arbeitest im **AAS-Designer** unter [https://v1-designer.aas-suite.de/].
