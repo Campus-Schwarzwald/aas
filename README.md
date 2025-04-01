@@ -1,150 +1,102 @@
-# aas
+# 🚲 AAS-Workshop: Erstelle die Verwaltungsschalen für das e-Bike
 
-# 🛠 Anleitung zur Befüllung der Verwaltungsschalen für das e-Bike
-
-Diese Anleitung beschreibt, wie du eine Asset Administration Shell (AAS) für ein e-Bike und dessen Komponenten erstellst und befüllst. Die Datenstruktur basiert auf der AASX-Datei `ebike_template_void.aasx`.
+In diesem Workshop erstellst du als Study die Verwaltungsschalen (Asset Administration Shells, AAS) für die verschiedenen **Komponenten eines e-Bikes**. Du nutzt dafür das bereitgestellte Template und arbeitest im **AAS-Designer** unter [https://designer.aas-suite.com](https://designer.aas-suite.com).
 
 ---
 
-## 🔍 Struktur der Verwaltungsschale (AAS)
+## 📥 Vorbereitung
 
-Die Verwaltungsschale ist hierarchisch aufgebaut:
+### 🔹 Was du brauchst
 
-1. **Asset (Niveau 0):** Das gesamte e-Bike
-2. **Submodelle (Niveau 1):** Verschiedene Aspekte wie "Digital Nameplate" oder "Technical Data"
-3. **Submodel-Elemente (Niveau 2):** Konkrete Datenfelder innerhalb der Submodelle
-
----
-
-## 🧩 Komponenten und ihre Submodelle
-
-| Komponente | Submodelle |
-|------------|-------------|
-| Rahmen     | Digital Nameplate, HandoverDocumentation, Technical Data, CarbonFootprint |
-| Antrieb    | Digital Nameplate, HandoverDocumentation, Technical Data, TimeSeries, CarbonFootprint |
-| Akku       | Digital Nameplate, HandoverDocumentation, Technical Data, TimeSeries, CarbonFootprint |
-| Reifen     | Digital Nameplate, HandoverDocumentation, Technical Data, CarbonFootprint |
-| Bremsen    | Digital Nameplate, HandoverDocumentation, Technical Data, CarbonFootprint |
+- Den **AAS-Designer** im Browser: [https://designer.aas-suite.com](https://designer.aas-suite.com)
+- Die Datei `ebike_template_void.aasx` (bereitgestellt)
+- Ein PDF-Handbuch je Bauteil (wird von der Lehrperson bereitgestellt)
+- Diese Anleitung (`README_ebike_workshop.md`)
 
 ---
 
-## 📦 Allgemeine Befüllung je Submodell
+## ✅ Ziel der Übung
 
-### 1. Digital Nameplate
-- URIOfTheProduct
-- ManufacturerName
-- ManufacturerProductDesignation
-- ContactInformation
-- OrderCodeOfManufacturer
-- ProductArticleNumberOfManufacturer
-- SerialNumber
-
-### 2. HandoverDocumentation
-- UserManual (PDF-Datei)
-- numberOfDocuments
-- Language, Version, StatusValue, StatusSetDate, OrganizationName, etc.
-
-### 3. Technical Data
-- GeneralInformation
-- ProductImage
-- ManufacturerLogo
-- ProductDimensions
-- PackagingDimension
-- MediaSupply
-
-### 4. TimeSeries *(nur für Antrieb & Akku)*
-- Zeitreihen wie z. B. Temperatur oder Ladezyklen
-- (Noch manuell einfügen als TechnicalProperty)
-
-### 5. CarbonFootprint
-- Ein einfacher numerischer Wert z. B. "62,5"
+- Du importierst das Template und arbeitest mit der übergeordneten Verwaltungsschale **„ebike“**
+- Du erstellst eine eigene Verwaltungsschale **für jede e-Bike-Komponente**
+- Du befüllst die Submodelle sauber mit sinnvollen, realistischen Werten
 
 ---
 
-## 🧱 Schritt-für-Schritt je Komponente
+## 🧩 Die e-Bike-Komponenten
 
-### 🔹 Rahmen
-- **Beschreibung:** Aluminiumrahmen mit integrierten Leuchten
-- **SerialNumber:** 10131
-- Submodelle: alle vier
+Du erstellst eine eigene Verwaltungsschale für:
 
-### 🔹 Antrieb
-- **Beschreibung:** 500-Watt Hinterradnabenmotor
-- **SerialNumber:** 10132
-- Zusätzlich mit TimeSeries
-
-### 🔹 Akku
-- **Beschreibung:** 48V, 15Ah Lithium-Ionen-Akku, entnehmbar
-- **SerialNumber:** 10133
-- Mit TimeSeries + hohem CarbonFootprint (z. B. "250 kg")
-
-### 🔹 Reifen
-- **Beschreibung:** High-End Offroad Bereifung
-- **SerialNumbers:** 10134, 10135
-
-### 🔹 Bremsen
-- **Beschreibung:** Hydraulische Scheibenbremsen vorne und hinten
-- **SerialNumbers:** 10136, 10137
+1. **Rahmen** (Frame)
+2. **Antrieb** (Drive Unit)
+3. **Akku** (Battery)
+4. **Reifen** (Tires)
+5. **Bremsen** (Brakes)
 
 ---
 
-## 💡 Tipps für den AASX Package Explorer
+## 🔧 Schritt-für-Schritt
 
-1. **Asset hinzufügen:** Für jede Komponente ein Asset anlegen
-2. **Submodell wählen:** Digital Nameplate, Technical Data etc.
-3. **Submodel-Elemente einfügen:** Werte eingeben oder Dateien hochladen
-4. **Dateien:** PDFs, Bilder etc. über den Typ "File" hochladen
-5. **Speichern:** Regelmäßig sichern und am Ende als `.aasx` exportieren
+### 1. Template importieren
+
+- Öffne [https://designer.aas-suite.com](https://designer.aas-suite.com)
+- Klicke auf **„Open Project“**
+- Lade die Datei `ebike_template_void.aasx` hoch. Du findest darin bereits die übergeordnete AAS mit dem Namen **„ebike“**.
+
+### 2. Pro Komponente:
+
+#### 🔹 AAS erstellen
+- Erstelle eine neue Verwaltungsschale (AAS)
+- **Benennung:** z. B. `Battery`, `Frame`, etc.
+- **ID:** Eindeutig und sinnvoll benennen (z. B. `https://campus-schwarzwald.de/ids/shell/battery_001`)
+- **Description:** Kurz und präzise (z. B. „Hydraulische Scheibenbremse vorne und hinten“)
+- **Assetbild:** Bild der Komponente hochladen (PNG, JPG)
+
+#### 🔹 Submodel „Nameplate“
+- Füge alle Felder einmalig aus:
+  - Seriennummer
+  - Herstellernamen
+  - Produktbezeichnung
+  - Baujahr, Software-/Hardware-/Firmware-Versionen
+  - CE-Markierung, Herkunftsland
+
+#### 🔹 Submodel „Handover Documentation“
+- **User Manual hochladen** (PDF wird bereitgestellt)
+- Trage Metadaten zum Dokument ein:
+  - Sprache, Titel, Version, Status, Organisation, Datei-Name
+
+#### 🔹 Submodel „Technical Data“
+- Technische Eigenschaften aus dem Manual übernehmen
+- Trage Maße, Gewicht, Spannung, Leistung etc. unter „Technical Properties“ ein
+- Optional: Produktbild, Herstellerlogo
+
+#### 🔹 Submodel „Carbon Footprint“
+- Trage folgende CO₂-Werte ein:
+
+| Komponente | Product Carbon Footprint (PCF) | Total Carbon Footprint (TCF) |
+|------------|-------------------------------|------------------------------|
+| Rahmen     | 62,5 kg CO₂e                  | 70 kg CO₂e                   |
+| Antrieb    | 110 kg CO₂e                   | 125 kg CO₂e                  |
+| Akku       | 250 kg CO₂e                   | 265 kg CO₂e                  |
+| Reifen     | 35 kg CO₂e                    | 40 kg CO₂e                   |
+| Bremsen    | 45 kg CO₂e                    | 50 kg CO₂e                   |
+
+---
+
+## 💾 Speichern & Abgabe
+
+- Klicke auf **Export** > **AASX**
+- Benenne deine Datei eindeutig (z. B. `battery_studentname.aasx`)
+- Abgabe erfolgt laut Ansage (Moodle, Mail, USB, etc.)
 
 ---
 
 ## 📁 Dateien im Repo
 
-- `ebike_template_void.aasx` → Vorlage
-- `README.md` → Diese Anleitung
+- `ebike_template_void.aasx` – Ausgangstemplate
+- `README_ebike_workshop.md` – Diese Anleitung
+- `Manual_Frame.pdf`, `Manual_Battery.pdf`, ... – je Komponente
 
 ---
 
-Bei Fragen: Gerne im Team oder bei der Lehrperson melden – viel Erfolg beim Ausprobieren!
-
-
----
-
-## 🖥 Anleitung für den AAS-Designer (https://designer.aas-suite.com/)
-
-Der AAS-Designer ist ein webbasiertes Tool zur Erstellung und Bearbeitung von Verwaltungsschalen. So nutzt du ihn in der Übung:
-
-### 🔑 Einstieg
-
-1. Rufe [https://designer.aas-suite.com/](https://designer.aas-suite.com/) im Browser auf.
-2. Klicke auf **"Open Project"** und lade die Datei `ebike_template_void.aasx` hoch.
-
-### 🧱 Verwaltungsschale bearbeiten
-
-1. **Verwaltungsschale auswählen:** Klicke auf die Kachel des gewünschten Assets (z. B. "Rahmen").
-2. **Submodell hinzufügen:** Nutze das Pluszeichen ➕ neben "Submodels".
-3. **Submodel-Elemente bearbeiten:** Klicke auf ein Submodell → dann auf "Add Submodel Element".
-4. **Felder befüllen:** Gib die Werte laut Anleitung oben ein.
-
-### 📎 Dateien hochladen
-
-- Elemente vom Typ **File** (z. B. Bedienungsanleitungen, Bilder) kannst du direkt über das Dateiauswahlfenster hochladen.
-- Achte auf sinnvolle Benennung und Dateiformate (z. B. PDF, PNG, JPG).
-
-### 💾 Speichern & Exportieren
-
-- Nach dem Bearbeiten klicke oben rechts auf **"Export"** → wähle **"AASX"**, um deine Version zu speichern.
-- Datei lokal sichern oder ins Repository hochladen.
-
----
-
-## ☑️ Empfohlene Vorgehensweise
-
-1. Projekt in den Designer laden
-2. Schritt für Schritt die Komponenten befüllen
-3. Zwischenspeichern nicht vergessen!
-4. Zum Schluss alles exportieren
-
----
-
-Viel Spaß beim Arbeiten mit dem AAS-Designer!
+Viel Spaß beim Erstellen deiner digitalen Verwaltungsschale! Bei Fragen: einfach fragen :)
