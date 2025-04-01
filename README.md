@@ -8,7 +8,7 @@ In diesem Workshop erstellst du als Study die Verwaltungsschalen (Asset Administ
 
 ### 🔹 Was du brauchst
 
-- Den **AAS-Designer** im Browser: [https://designer.aas-suite.com]  https://v1-designer.aas-suite.de/ (https://designer.aas-suite.com)
+- Den **AAS-Designer** im Browser: [https://v1-designer.aas-suite.de/] (https://designer.aas-suite.com)
 - Die Datei `ebike_template_void.aasx` (bereitgestellt)
 - Ein PDF-Handbuch je Bauteil (wird von der Lehrperson bereitgestellt)
 - Diese Anleitung (`README_ebike_workshop.md`)
