@@ -1,6 +1,7 @@
 # Aufgaben Tobi:
 - Screenshots einfügen von AAS-Suite
-- Einmal komplett durchspielen lassen von Jannis Hald
+- Einmal komplett durchspielen lassen von JH
+- Studi-User Anlegen
 
 # 🚲 AAS-Workshop: Erstelle die Verwaltungsschalen für das e-Bike
 
