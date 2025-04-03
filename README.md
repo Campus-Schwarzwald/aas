@@ -18,7 +18,7 @@ In diesem Workshop erstellst du die Verwaltungsschalen (Asset Administration She
 - Den **AAS-Designer** im Browser: [https://v1-designer.aas-suite.de/] (https://designer.aas-suite.com)
 - Logge dich mit den bereitgestellten Login-Daten (DIN A4 Blatt auf deinem Platz) ein
 - Die Datei `ebike_template_aas.aasx` (bereitgestellt)
-- Ein PDF-Handbuch je Bauteil (wird von der Lehrperson bereitgestellt)
+- Ein PDF-Handbuch je Bauteil (im Ordner Manuals)
 - Diese Anleitung (`README_ebike_workshop.md`)
 
 ---
