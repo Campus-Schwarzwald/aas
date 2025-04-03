@@ -1,11 +1,7 @@
-# Aufgaben Tobi:
-- Screenshots einfügen von AAS-Suite
-- Einmal komplett durchspielen lassen von JH
-- Studi-User anlegen
 
 # 🚲 AAS-Workshop: Erstelle die Verwaltungsschalen für das e-Bike
 
-In diesem Workshop erstellst du die Verwaltungsschalen (Asset Administration Shells, AAS) für die verschiedenen **Komponenten eines e-Bikes**. Du nutzt dafür das bereitgestellte Template und arbeitest im **AAS-Designer** unter [https://v1-designer.aas-suite.de/].
+In diesem Workshop erstellst du die Verwaltungsschalen (Asset Administration Shells, AAS) für die verschiedenen **Komponenten eines e-Bikes**. Du nutzt dafür das bereitgestellte Template und arbeitest im **AAS-Designer** unter [https://v1-designer.aas-suite.de/](https://v1-designer.aas-suite.de/).
 
 ![ebike](https://github.com/user-attachments/assets/cbe31a72-746f-411f-8391-8c1cd6797cb4)
 
@@ -15,7 +11,7 @@ In diesem Workshop erstellst du die Verwaltungsschalen (Asset Administration She
 
 ### 🔹 Was du brauchst
 
-- Den **AAS-Designer** im Browser: [https://v1-designer.aas-suite.de/] (https://designer.aas-suite.com)
+- Den **AAS-Designer** im Browser: [https://v1-designer.aas-suite.de/](https://v1-designer.aas-suite.de/)
 - Logge dich mit den bereitgestellten Login-Daten (DIN A4 Blatt auf deinem Platz) ein
 - Die Datei `ebike_template_aas.aasx` (bereitgestellt)
 - Ein PDF-Handbuch je Bauteil (im Ordner Manuals)
@@ -33,7 +29,7 @@ In diesem Workshop erstellst du die Verwaltungsschalen (Asset Administration She
 
 ## 🧩 Die e-Bike-Komponenten
 
-Du erstellst eine eigene Verwaltungsschale für:
+Für jede der folgenden Komponenten des e-Bikes erstellst du eine eigene Verwaltungsschale, basierend auf dem bereitgestellten **AAS-Template**:
 
 1. **Rahmen** (Frame)
 2. **Antrieb** (Drive Unit)
@@ -47,65 +43,76 @@ Du erstellst eine eigene Verwaltungsschale für:
 
 ### 1. Template importieren
 
-- Öffne [https://v1-designer.aas-suite.de/]
+- Öffne [https://v1-designer.aas-suite.de/](https://v1-designer.aas-suite.de/)
 - Klicke auf **„Packages“** → **„Add“** → **„Upload existing packages“**
-- Lade die Datei `ebike_template_aas.aasx` hoch. Darin ist die übergeordnete AAS **„ebike“** bereits enthalten
+- Lade die Datei `ebike_template_aas.aasx` hoch. Darin ist die übergeordnete AAS **„ebike“** bereits enthalten.
 
 **Wichtig:** Keine neue AAS über „Add“ → „Empty AAS“ erstellen, sondern mit der vorhandenen AAS arbeiten!
 
-### 2. Pro Komponente:
+---
 
-#### 🔹 AAS erstellen
-- Öffne das Dreipunktemenü und erstelle eine neue Verwaltungsschale (AAS)
-- **Benennung:** z. B. `Battery`, `Frame`, etc.
+### 2. Für jede Komponente:
+
+#### 🔹 AAS vom Template kopieren
+
+- Wähle die bereits vorhandene AAS aus dem Template (z. B. die übergeordnete „ebike“-AAS)
+- Klicke auf das Dreipunktemenü und wähle **„Copy“** aus, um eine Kopie der AAS für jede Komponente zu erstellen.
+- **Benennung:** Wähle einen spezifischen Namen für jede Komponente (z. B. `Battery`, `Frame`, `DriveUnit`, `Tires`, `Brakes`)
 - **Global Asset ID:** Eindeutig und sinnvoll benennen (z. B. `https://campus-schwarzwald.de/ids/shell/battery_001`)
 - **Specific Asset ID:** Eine eigene Identifikationsnummer vergeben
 - **Description:** Kurz und präzise (z. B. „Hydraulische Scheibenbremse vorne und hinten“)
-- **Assetbild:** Bild der Komponente hochladen (PNG, JPG)
+- **Assetbild:** Bild der jeweiligen Komponente hochladen (PNG, JPG)
 
 #### 🔹 Submodel „Nameplate“
-- Füge alle Felder einmalig aus:
-  - **Seriennummer:** `SN-EBIKE-2025-001`
-  - **Herstellername:** `Schwarzwald Bikes GmbH`
-  - **Produktbezeichnung:** `E-Bike Modell X`
-  - **Baujahr:** `2025`
-  - **Software-Version:** `1.2.3`
-  - **Hardware-Version:** `Rev. 4`
-  - **Firmware-Version:** `FW-2025.04`
-  - **CE-Markierung:** `✔️ (Konform gemäß EU-Richtlinien)`
-  - **Herkunftsland:** `Deutschland`
+
+Füge die folgenden Felder aus und fülle sie mit den entsprechenden Informationen. Beachte die tabellarische Übersicht, um die Felder für jede Komponente zu vervollständigen.
+
+| **Feld**               | **Rahmen**                               | **Antrieb**                              | **Akku**                                 | **Reifen**                               | **Bremsen**                              |
+|------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|
+| **Seriennummer**        | `SN-EBIKE-2025-001`                      | `SN-EBIKE-2025-015`                      | `SN-EBIKE-2025-031`                      | `SN-EBIKE-2025-045`                      | `SN-EBIKE-2025-060`                      |
+| **Herstellername**      | `Schwarzwald Bikes GmbH`                 | `E-Motion Systems`                       | `BatteryTech China Ltd.`                 | `Continental Reifen GmbH`                | `Shimano Brake Systems`                  |
+| **Produktbezeichnung**  | `E-Bike Aluminium Rahmen X`              | `Bosch Performance Line Drive Unit`      | `LiFePO4 36V Akku, 500Wh`                | `Continental Contact Plus`               | `Shimano Deore Hydraulische Bremsen`     |
+| **Baujahr**             | `2025`                                   | `2025`                                   | `2025`                                   | `2025`                                   | `2025`                                   |
+| **Software-Version**    | `1.2.3`                                  | `2.1.5`                                  | `1.0.4`                                  | `N/A`                                    | `3.0.1`                                  |
+| **Hardware-Version**    | `Rev. 5`                                 | `Rev. 8`                                 | `Rev. 2`                                 | `Rev. 4`                                 | `Rev. 3`                                 |
+| **Firmware-Version**    | `FW-2025.04`                             | `FW-2025.06`                             | `FW-2025.01`                             | `N/A`                                    | `FW-2025.02`                             |
+| **CE-Markierung**       | `✔️ (Konform gemäß EU-Richtlinien)`       | `✔️ (Konform gemäß EU-Richtlinien)`       | `✔️ (Konform gemäß EU-Richtlinien)`       | `✔️ (Konform gemäß EU-Richtlinien)`       | `✔️ (Konform gemäß EU-Richtlinien)`       |
+| **Herkunftsland**       | `Deutschland`                            | `Deutschland`                            | `China`                                 | `Deutschland`                            | `Japan`                                  |
 
 #### 🔹 Submodel „Handover Documentation“
+
 - **User Manual hochladen** (PDF wird bereitgestellt)
 - Trage Metadaten zum Dokument ein:
   - Sprache, Titel, Version, Status, Organisation, Datei-Name
 
 #### 🔹 Submodel „Technical Data“
-- Technische Eigenschaften aus dem Manual übernehmen
-- Neue Eigenschaften (Spannung, Leistung, Gewicht etc.) hinzufügen:
+
+- Übernehme die technischen Eigenschaften aus dem Handbuch der jeweiligen Komponente.
+- Füge neue Eigenschaften hinzu (Spannung, Leistung, Gewicht etc.):
   - **Dreipunktemenü → „Add“ → „Elements“ → „Property“**
-  - Datentyp korrekt wählen (z. B. **Double** für Spannung: `14.3` V)
-  - Einheit in der Data Definition ergänzen
+  - Wähle den richtigen Datentyp (z. B. **Double** für Spannung: `14.3` V)
+  - Ergänze die Einheit in der Data Definition
 
 #### 🔹 Submodel „Carbon Footprint“
-- Trage folgende CO₂-Werte ein:
+
+Trage die CO₂-Werte für jede Komponente ein. Die Werte für die Komponenten des e-Bikes sind:
 
 | Komponente | Product Carbon Footprint (PCF) | Transport Carbon Footprint (TCF) |
-|------------|-------------------------------|------------------------------|
-| Rahmen     | 62,5 kg CO₂e                  | 5 kg CO₂e                    |
-| Antrieb    | 110 kg CO₂e                   | 10 kg CO₂e                   |
-| Akku       | 250 kg CO₂e                   | 15 kg CO₂e                   |
-| Reifen     | 35 kg CO₂e                    | 3 kg CO₂e                    |
-| Bremsen    | 45 kg CO₂e                    | 4 kg CO₂e                    |
+|------------|-------------------------------|----------------------------------|
+| **Rahmen** | 62,5 kg CO₂e                  | 5 kg CO₂e                        |
+| **Antrieb**| 110 kg CO₂e                   | 10 kg CO₂e                       |
+| **Akku**   | 250 kg CO₂e                   | 15 kg CO₂e                       |
+| **Reifen** | 35 kg CO₂e                    | 3 kg CO₂e                        |
+| **Bremsen**| 45 kg CO₂e                    | 4 kg CO₂e                        |
 
 **Hinweis:** Das Pflichtfeld **„Quantity of measure for calculation“** muss ausgefüllt sein. Trage hier **„kg CO₂e per unit“** ein, da sich die Werte auf komplette Komponenten beziehen.
 
 ---
 
-## 💾 Speichern & Betrachten
+### 3. Speichern & Betrachten
 
-- Speichere deine Verwaltungsschale entsprechend ab (Name_ebike)
-- Betrachte deine Verwaltungsschale
+- Speichere deine Verwaltungsschale mit einem sinnvollen Namen (z. B. `Battery_ebike`, `Frame_ebike`)
+- Betrachte deine Verwaltungsschale, um sicherzustellen, dass alle Werte korrekt übernommen wurden
 
 ---
 
