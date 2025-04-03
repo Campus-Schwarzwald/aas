@@ -17,7 +17,7 @@ In diesem Workshop erstellst du die Verwaltungsschalen (Asset Administration She
 
 - Den **AAS-Designer** im Browser: [https://v1-designer.aas-suite.de/] (https://designer.aas-suite.com)
 - Logge dich mit den bereitgestellten Login-Daten (DIN A4 Blatt auf deinem Platz) ein
-- Die Datei `ebike_template_void.aasx` (bereitgestellt)
+- Die Datei `ebike_template_aas.aasx` (bereitgestellt)
 - Ein PDF-Handbuch je Bauteil (wird von der Lehrperson bereitgestellt)
 - Diese Anleitung (`README_ebike_workshop.md`)
 
@@ -49,7 +49,7 @@ Du erstellst eine eigene Verwaltungsschale für:
 
 - Öffne [https://v1-designer.aas-suite.de/]
 - Klicke auf **„Packages“** → **„Add“** → **„Upload existing packages“**
-- Lade die Datei `ebike_template_void.aasx` hoch. Darin ist die übergeordnete AAS **„ebike“** bereits enthalten
+- Lade die Datei `ebike_template_aas.aasx` hoch. Darin ist die übergeordnete AAS **„ebike“** bereits enthalten
 
 **Wichtig:** Keine neue AAS über „Add“ → „Empty AAS“ erstellen, sondern mit der vorhandenen AAS arbeiten!
 
@@ -111,7 +111,7 @@ Du erstellst eine eigene Verwaltungsschale für:
 
 ## 📁 Dateien im Repo
 
-- `ebike_template_void.aasx` – Ausgangstemplate
+- `ebike_template_aas.aasx` – Ausgangstemplate
 - `README_ebike_workshop.md` – Diese Anleitung
 - `Manual_Frame.pdf`, `Manual_Battery.pdf`, ... – je Komponente
 
