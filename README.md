@@ -1,4 +1,3 @@
-
 # 🚲 AAS-Workshop: Erstelle die Verwaltungsschalen für das e-Bike
 
 In diesem Workshop erstellst du die Verwaltungsschalen (Asset Administration Shells, AAS) für die verschiedenen **Komponenten eines e-Bikes**. Du nutzt dafür das bereitgestellte Template und arbeitest im **AAS-Designer** unter [https://v1-designer.aas-suite.de/](https://v1-designer.aas-suite.de/).
@@ -61,6 +60,7 @@ Für jede der folgenden Komponenten erstellst du eine eigene AAS:
 
 #### 🔹 AAS anpassen
 
+- **ID:** Klicke auf **„generate IRI“**
 - **IdShort:** z. B. `Battery`, `Frame`, `DriveUnit`, `Tires`, `Brakes`
 - **Global Asset ID:** z. B. `https://campus-schwarzwald.de/ids/shell/battery_001`
 - **Description:** z. B. „Hydraulische Scheibenbremse vorne und hinten“
@@ -72,19 +72,19 @@ Für jede der folgenden Komponenten erstellst du eine eigene AAS:
 
 ### 3. Submodel „Nameplate“
 
-Befülle folgende Felder je Komponente:
+Befülle folgende Felder je Komponente (leicht angepasst für mehr Realitätsnähe):
 
 | **Feld**               | **Rahmen**                               | **Antrieb**                              | **Akku**                                 | **Reifen**                               | **Bremsen**                              |
 |------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|
 | Seriennummer           | `SN-EBIKE-2025-001`                      | `SN-EBIKE-2025-015`                      | `SN-EBIKE-2025-031`                      | `SN-EBIKE-2025-045`                      | `SN-EBIKE-2025-060`                      |
-| Herstellername         | `Schwarzwald Bikes GmbH`                 | `E-Motion Systems`                       | `BatteryTech China Ltd.`                 | `Continental Reifen GmbH`                | `Shimano Brake Systems`                  |
+| Herstellername         | `Schwarzwald Bikes GmbH`                 | `E-Motion Systems / Bosch`               | `BatteryTech China Ltd.`                 | `Continental Reifen GmbH`                | `Shimano Brake Systems`                  |
 | Produktbezeichnung     | `E-Bike Aluminium Rahmen X`              | `Bosch Performance Line Drive Unit`      | `LiFePO4 36V Akku, 500Wh`                | `Continental Contact Plus`               | `Shimano Deore Hydraulische Bremsen`     |
 | Baujahr                | `2025`                                   | `2025`                                   | `2025`                                   | `2025`                                   | `2025`                                   |
 | Software-Version       | `1.2.3`                                  | `2.1.5`                                  | `1.0.4`                                  | `N/A`                                    | `3.0.1`                                  |
 | Hardware-Version       | `Rev. 5`                                 | `Rev. 8`                                 | `Rev. 2`                                 | `Rev. 4`                                 | `Rev. 3`                                 |
 | Firmware-Version       | `FW-2025.04`                             | `FW-2025.06`                             | `FW-2025.01`                             | `N/A`                                    | `FW-2025.02`                             |
 | CE-Markierung          | `✔️ (Konform gemäß EU-Richtlinien)`       | `✔️ (Konform gemäß EU-Richtlinien)`       | `✔️ (Konform gemäß EU-Richtlinien)`       | `✔️ (Konform gemäß EU-Richtlinien)`       | `✔️ (Konform gemäß EU-Richtlinien)`       |
-| Herkunftsland          | `Deutschland`                            | `Deutschland`                            | `China`                                 | `Deutschland`                            | `Japan`                                  |
+| Herkunftsland          | `Deutschland`                            | `Deutschland`                            | `China`                                  | `Deutschland`                            | `Japan`                                  |
 
 > 📌 Hinweis: Das Feld **Produktbezeichnung** entspricht im Submodel dem Eintrag **„ManufacturerProductDesignation“**.
 
@@ -105,6 +105,8 @@ Befülle folgende Felder je Komponente:
   - Dreipunktemenü → **Add → Elements → Property**
   - Wähle den Datentyp passend (z. B. **Double** für Spannung: `14.3 V`)
   - Ergänze die Einheit über die Data Definition
+
+> 📝 **Hinweis:** Eigenschaften findest du im PDF-Handbuch der jeweiligen Komponente unter dem Abschnitt *Technische Daten*.
 
 > 💡 Falls Zeitdruck besteht: Du kannst ggf. einige Properties weglassen.
 
