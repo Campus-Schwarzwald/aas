@@ -74,7 +74,7 @@ Für jede der folgenden Komponenten erstellst du eine eigene AAS:
 
 ### 3. Submodel „Nameplate“
 
-Befülle folgende Felder je Komponente (leicht angepasst für mehr Realitätsnähe):
+Befülle folgende Felder je Komponente:
 
 | **Feld**               | **Rahmen**                               | **Antrieb**                              | **Akku**                                 | **Reifen**                               | **Bremsen**                              |
 |------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|------------------------------------------|
@@ -103,7 +103,7 @@ Befülle folgende Felder je Komponente (leicht angepasst für mehr Realitätsnä
 ### 5. Submodel „Technical Data“
 
 - Übertrage technische Eigenschaften aus dem Handbuch
-- Neue Eigenschaften hinzufügen (im SMC "Technical Properties":
+- Neue Eigenschaften hinzufügen (im SMC "Technical Properties"):
   - Dreipunktemenü → **Add → Elements → Property**
   - Wähle den Datentyp passend (z. B. **Double** für Spannung: `14.3 V`)
   - Ergänze die Einheit über die Data Definition
