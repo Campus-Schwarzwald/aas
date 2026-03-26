@@ -58,7 +58,7 @@ Für jede der folgenden Komponenten erstellst du eine eigene AAS:
 
 - Wechsle zurück zur Übersicht **„Shells“**
 - Wähle die AAS **„Template“** und öffne das **Dreipunkt-Menü** → **„Advanced“** → **„Duplicate“**
-- Öffne die AAS und passe sie an
+- Öffne die duplizierte AAS und passe sie wie im Folgenden beschrieben an
 
 #### 🔹 AAS anpassen
 
