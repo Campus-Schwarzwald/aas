@@ -42,7 +42,7 @@ Für jede der folgenden Komponenten erstellst du eine eigene AAS:
 
 ### 1. Template importieren
 
-- Öffne den AAS-Designer: [https://v1-designer.aas-suite.de/](https://v1-designer.aas-suite.de/)
+- Öffne den AAS-Designer: [https://designer.aas-suite.de/](https://designer.aas-suite.de/)
 - Gehe zu **„Packages“** → **„Add“** → **„Upload existing packages“**
 - Lade `ebike_template_aas.aasx` hoch (enthält die AAS **„ebike“** inkl. Template-Komponenten)
 
