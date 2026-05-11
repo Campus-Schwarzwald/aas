@@ -178,7 +178,7 @@ http://localhost:1880/ebike/soc/history
 http://localhost:1880/ui
 
 
-###8. Speichern & Prüfen
+### 8. Speichern & Prüfen
 
 - Speichere jede AAS sinnvoll benannt ab (z. B. `Battery_ebike`)
 - Prüfe, ob alle Werte korrekt und vollständig sind
@@ -193,4 +193,4 @@ http://localhost:1880/ui
 
 ---
 
-#Viel Erfolg & Spaß beim digitalen Zwilling! Bei Fragen einfach fragen 😊
+Viel Erfolg & Spaß beim digitalen Zwilling! Bei Fragen einfach fragen 😊
