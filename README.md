@@ -172,12 +172,13 @@ Füge im Submodel `TimeSeriesData` folgende Properties hinzu:
 
 Falls Node-RED lokal auf deinem eigenen Rechner läuft, kannst du stattdessen verwenden:
 
-```text
+text
 http://localhost:1880/ebike/soc
 http://localhost:1880/ebike/soc/history
 http://localhost:1880/ui
 
-### 8. Speichern & Prüfen
+
+###8. Speichern & Prüfen
 
 - Speichere jede AAS sinnvoll benannt ab (z. B. `Battery_ebike`)
 - Prüfe, ob alle Werte korrekt und vollständig sind
