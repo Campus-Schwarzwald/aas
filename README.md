@@ -35,6 +35,7 @@ Für jede der folgenden Komponenten erstellst du eine eigene AAS:
 3. **Akku** (Battery)
 4. **Reifen** (Tires)
 5. **Bremsen** (Brakes)
+6. Time Series (Live Daten Akku-SoC)
 
 ---
 
@@ -159,7 +160,7 @@ Füge im Submodel **TimeSeriesData** folgende Properties hinzu:
 | **ObservedProperty** | String | State of Charge |
 | **ValueName** | String | soc_percent |
 | **Unit** | String | % |
-| **SamplingInterval** | String | 5 s |
+| **SamplingInterval** | String | 1 s |
 | **DataSourceType** | String | external |
 | **PayloadFormat** | String | application/json |
 | **EndpointCurrentValue** | String | http://10.100.10.108:1880/ebike/soc |
