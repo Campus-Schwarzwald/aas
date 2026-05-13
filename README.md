@@ -131,51 +131,42 @@ Pflichtfeld **„Quantity of measure for calculation“**:
 
 ---
 
-### 7. Submodel „Time Series Data“ mit Node-RED-Dashboard
+# 7. Submodel „Time Series Data“ mit Node-RED-Dashboard
 
 In diesem Schritt ergänzt du deine eBike-Verwaltungsschale um ein vereinfachtes Submodell für Zeitreihendaten.
-
-Die Messwerte werden dabei **nicht direkt in der AAS gespeichert**. Stattdessen beschreibt die AAS, welche Zeitreihe existiert und wo diese extern abgerufen und visualisiert werden kann.
+Die Messwerte werden dabei nicht direkt in der AAS gespeichert. Stattdessen beschreibt die AAS, welche Zeitreihe existiert und wo diese extern abgerufen und visualisiert werden kann.
 
 Die eigentlichen Live- und Historiendaten werden über eine vorbereitete Node-RED-Simulation bereitgestellt.
 
-#### Ziel
-
+### Ziel
 Du sollst verstehen, dass eine Verwaltungsschale nicht zwingend alle Daten selbst enthalten muss. Sie kann auch auf externe Datenquellen verweisen, zum Beispiel auf eine API oder ein Dashboard.
 
-#### Submodel anlegen
-
+### Submodel anlegen
 Lege in deiner eBike-AAS ein neues Submodel an:
 
 | Feld | Wert |
-|---|---|
-| idShort | `TimeSeriesData` |
-| Description | `Vereinfachtes Submodell zur Beschreibung von Zeitreihendaten des E-Bikes.` |
+| :--- | :--- |
+| **idShort** | TimeSeriesData |
+| **Description** | Vereinfachtes Submodell zur Beschreibung von Zeitreihendaten des E-Bikes. |
 
-#### Properties hinzufügen
+---
 
-Füge im Submodel `TimeSeriesData` folgende Properties hinzu:
+### Properties hinzufügen
+Füge im Submodel **TimeSeriesData** folgende Properties hinzu:
 
 | Property | Datentyp | Wert |
-|---|---|---|
-| `ObservedProperty` | String | `State of Charge` |
-| `ValueName` | String | `soc_percent` |
-| `Unit` | String | `%` |
-| `SamplingInterval` | String | `5 s` |
-| `DataSourceType` | String | `external` |
-| `PayloadFormat` | String | `application/json` |
-| `EndpointCurrentValue` | String | `http://<vm-ip>:1880/ebike/soc` |
-| `EndpointTimeSeries` | String | `http://<vm-ip>:1880/ebike/soc/history` |
-| `DashboardUrl` | String | `http://<vm-ip>:1880/ui` |
+| :--- | :--- | :--- |
+| **ObservedProperty** | String | State of Charge |
+| **ValueName** | String | soc_percent |
+| **Unit** | String | % |
+| **SamplingInterval** | String | 5 s |
+| **DataSourceType** | String | external |
+| **PayloadFormat** | String | application/json |
+| **EndpointCurrentValue** | String | http://10.100.10.108:1880/ebike/soc |
+| **EndpointTimeSeries** | String | http://10.100.10.108:1880/ebike/soc/history |
+| **DashboardUrl** | String | http://10.100.10.108:1880/ui |
 
-> Hinweis: Ersetze `<vm-ip>` durch die IP-Adresse oder den Hostnamen der bereitgestellten Node-RED-VM.
-
-Falls Node-RED lokal auf deinem eigenen Rechner läuft, kannst du stattdessen verwenden:
-
-text
-http://localhost:1880/ebike/soc
-http://localhost:1880/ebike/soc/history
-http://localhost:1880/ui
+**Hinweis:** Die Endpunkte wurden auf die Ziel-IP **10.100.10.108** angepasst. Du kannst das Dashboard direkt über die angegebene `DashboardUrl` in deinem Browser aufrufen.
 
 
 ### 8. Speichern & Prüfen
