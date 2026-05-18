@@ -47,7 +47,7 @@ Für jede der folgenden Komponenten erstellst du eine eigene AAS:
 - Gehe zu **„Shells“** → **„Add“** → **„Upload existing packages“**
 - Lade `ebike_template_aas.aasx` hoch (enthält die AAS **„ebike“** inkl. Template-Komponenten)
 - Wähle **„Derived Import“**
-- Wähle unter "Derivation" als Reference Type "Model Reference"
+- unter "Derivation" den bisherigen "Reference Type" löschen und neun Value eines Types auf Basis von "https://campus-schwarzwald.de" generieren lassen.
 - Speichere die AAS
 
 > ⚠️ Wichtig: **Keine neue AAS** über „Add“ → „Empty AAS“ erstellen!
