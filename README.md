@@ -64,7 +64,7 @@ Für jede der folgenden Komponenten erstellst du eine eigene AAS:
 
 #### 🔹 AAS anpassen
 
-- **ID:** Klicke auf **„generate IRI“**
+- **ID:** Klicke auf **„Change AAS ID“**
 - **IdShort:** z. B. `Battery`, `Frame`, `DriveUnit`, `Tires`, `Brakes`
 - **Global Asset ID:** z. B. `https://campus-schwarzwald.de/ids/shell/battery_001`
 - **Description:** z. B. „Hydraulische Scheibenbremse vorne und hinten“
