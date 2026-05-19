@@ -35,7 +35,7 @@ Für jede der folgenden Komponenten erstellst du eine eigene AAS:
 3. **Akku** (Battery)
 4. **Reifen** (Tires)
 5. **Bremsen** (Brakes)
-6. Time Series (Live Daten Akku-SoC)
+6. Time Series (Live Daten Akku-SoC) -> wird nicht aus Template dupliziert
 
 ---
 
