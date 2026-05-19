@@ -66,7 +66,7 @@ Für jede der folgenden Komponenten erstellst du eine eigene AAS:
 
 - **ID:** Klicke auf **„Change AAS ID“**
 - **IdShort:** z. B. `Battery`, `Frame`, `DriveUnit`, `Tires`, `Brakes`
-- **Global Asset ID:** z. B. `https://campus-schwarzwald.de/ids/shell/battery_001`
+- **Global Asset ID:** z. B. `https://campus-schwarzwald.de/ids/shell/battery_001` oder `genegrate IRI`
 - **Description:** z. B. „Hydraulische Scheibenbremse vorne und hinten“
 - **Default thumbnail:** Komponentenspezifisches Bild (PNG oder JPG) hochladen
 
