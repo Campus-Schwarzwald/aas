@@ -15,6 +15,7 @@ In diesem Workshop erstellst du die Verwaltungsschalen (Asset Administration She
 - Die Datei `ebike_template_aas.aasx`
 - Ein PDF-Handbuch je Bauteil (im Ordner `Manuals`)
 - Diese Anleitung (`README_ebike_workshop.md`)
+- Du musst im Projekt-WLAN eingeloggt sein (`siehe Tafelanschrieb`)
 
 ---
 
